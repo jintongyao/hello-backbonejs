@@ -1,39 +1,26 @@
-// **This example illustrates the declaration and instantiation of a minimalist View.**
+// **这个例子阐述了一个最简单的View的声明与定义。**
 //
-// _Working example: [1.html](../1.html)._
-// _[Go to Example 2](2.html)_
+// _运行效果: [1.html](../1.html)._
+//
+// _[跳转到例子 2](2.html)_
 
-// Self-executing wrapper
+// 自执行闭包
 (function($){
-  // **ListView class**: Our main app view.
+  // **ListView 类**: 应用的主视图。
   var ListView = Backbone.View.extend({
-    el: $('body'), // attaches `this.el` to an existing element.
-    // `initialize()`: Automatically called upon instantiation. Where you make all types of bindings, _excluding_ UI events, such as clicks, etc.
+    el: $('body'), // 将 `this.el` 与一个已存在的元素绑定。
+    // `initialize()`：在实例化时被自动调用。你可以在这里进行所有类型的绑定（除了界面UI事件以外），如单击事件等。
     initialize: function(){
-      _.bindAll(this, 'render'); // fixes loss of context for 'this' within methods
+      _.bindAll(this, 'render'); // 修复部分方法中的'this'上下文。
 
-       this.render(); // not all views are self-rendering. This one is.
+       this.render(); // 并非所有视图都需要自动渲染。在这里我们设定了自动渲染。
     },
-    // `render()`: Function in charge of rendering the entire view in `this.el`. Needs to be manually called by the user.
+    // `render()`：用于渲染`this.el`中所有视图的函数。需要手动调用。
     render: function(){
       $(this.el).append("<ul> <li>hello world</li> </ul>");
     }
   });
 
-  // **listView instance**: Instantiate main app view.
+  // **listView 实例**: 实例化app的主视图。
   var listView = new ListView();
 })(jQuery);
-
-// <div style="float:left; margin-bottom:40px;"><img style="width:36px; margin:5px 10px 0 5px;" src="https://g.twimg.com/Twitter_logo_blue.png"/></div> <div style="background:rgb(245,245,255); padding:10px;">Follow me on Twitter: <a target="_blank" href="http://twitter.com/r2r">@r2r</a> </div>
-// <script>
-//   if (window.location.href.search(/\?x/) < 0) {
-//     var _gaq = _gaq || [];
-//     _gaq.push(['_setAccount', 'UA-924459-7']);
-//     _gaq.push(['_trackPageview']);
-//     (function() {
-//       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-//       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-//       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-//     })();
-//   }
-// </script>

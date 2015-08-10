@@ -27,9 +27,9 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-1">&#182;</a>
               </div>
-              <p><strong>This example illustrates the declaration and instantiation of a minimalist View.</strong></p>
-<p><em>Working example: <a href="../1.html">1.html</a>.</em>
-<em><a href="2.html">Go to Example 2</a></em></p>
+              <p><strong>这个例子阐述了一个最简单的View的声明与定义。</strong></p>
+<p><em>运行效果: <a href="../1.html">1.html</a>.</em></p>
+<p><em><a href="2.html">跳转到例子 2</a></em></p>
 
             </div>
             
@@ -42,7 +42,7 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-2">&#182;</a>
               </div>
-              <p>Self-executing wrapper</p>
+              <p>自执行闭包</p>
 
             </div>
             
@@ -57,12 +57,12 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-3">&#182;</a>
               </div>
-              <p><strong>ListView class</strong>: Our main app view.</p>
+              <p><strong>ListView 类</strong>: 应用的主视图。</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>  <span class="hljs-keyword">var</span> ListView = Backbone.View.extend({
-    el: $(<span class="hljs-string">'body'</span>), <span class="hljs-comment">// attaches `this.el` to an existing element.</span></pre></div></div>
+    el: $(<span class="hljs-string">'body'</span>), <span class="hljs-comment">// 将 `this.el` 与一个已存在的元素绑定。</span></pre></div></div>
             
         </li>
         
@@ -73,14 +73,14 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-4">&#182;</a>
               </div>
-              <p><code>initialize()</code>: Automatically called upon instantiation. Where you make all types of bindings, <em>excluding</em> UI events, such as clicks, etc.</p>
+              <p><code>initialize()</code>：在实例化时被自动调用。你可以在这里进行所有类型的绑定（除了界面UI事件以外），如单击事件等。</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>    initialize: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-      _.bindAll(<span class="hljs-keyword">this</span>, <span class="hljs-string">'render'</span>); <span class="hljs-comment">// fixes loss of context for 'this' within methods</span>
+      _.bindAll(<span class="hljs-keyword">this</span>, <span class="hljs-string">'render'</span>); <span class="hljs-comment">// 修复部分方法中的'this'上下文。</span>
 
-       <span class="hljs-keyword">this</span>.render(); <span class="hljs-comment">// not all views are self-rendering. This one is.</span>
+       <span class="hljs-keyword">this</span>.render(); <span class="hljs-comment">// 并非所有视图都需要自动渲染。在这里我们设定了自动渲染。</span>
     },</pre></div></div>
             
         </li>
@@ -92,7 +92,7 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-5">&#182;</a>
               </div>
-              <p><code>render()</code>: Function in charge of rendering the entire view in <code>this.el</code>. Needs to be manually called by the user.</p>
+              <p><code>render()</code>：用于渲染<code>this.el</code>中所有视图的函数。需要手动调用。</p>
 
             </div>
             
@@ -110,37 +110,12 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-6">&#182;</a>
               </div>
-              <p><strong>listView instance</strong>: Instantiate main app view.</p>
+              <p><strong>listView 实例</strong>: 实例化app的主视图。</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>  <span class="hljs-keyword">var</span> listView = <span class="hljs-keyword">new</span> ListView();
 })(jQuery);</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-7">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-7">&#182;</a>
-              </div>
-              <p><div style="float:left; margin-bottom:40px;"><img style="width:36px; margin:5px 10px 0 5px;" src="https://g.twimg.com/Twitter_logo_blue.png"/></div> <div style="background:rgb(245,245,255); padding:10px;">Follow me on Twitter: <a target="_blank" href="http://twitter.com/r2r">@r2r</a> </div></p>
-<script>
-  if (window.location.href.search(/\?x/) < 0) {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-924459-7']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  }
-</script>
-
-            </div>
             
         </li>
         
