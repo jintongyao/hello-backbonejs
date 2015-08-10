@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>
-    Hello Backbone.js Tutorial
-  </title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="docs/docco.css">
-<script>
-  if (window.location.href.search(/\?x/) < 0) {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-924459-7']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  }
-</script>
+    <title>
+        Hello Backbone.js 教程
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="docs/docco.css">
+    <script>
+        if(window.location.href.search(/\?x/) < 0) {
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-65689365-2']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
 </head>
 
 <body>
-  <div id="container">
+<div id="container">
     <div id="background"></div>
     <table cellpadding="0" cellspacing="0">
-      <thead>
+        <thead>
         <tr>
-          <th class="docs">
-            <h1>
-              Hello Backbone.js
-            </h1>
-          </th>
-          <th class="code"></th>
+            <th class="docs">
+                <h1>
+                    Hello Backbone.js
+                </h1>
+            </th>
+            <th class="code"></th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         <tr id="section-1">
-          <td class="docs">
-            <p style='background:#aaffaa; padding:5px 10px;'>
-              Shameless advertisement: Don't forget to check out <a href="http://agilityjs.com" style='color:blue;'>Agility.js</a>, a simpler alternative to Backbone.js.
-            </p>
+            <td class="docs">
+                <p style='background:#aaffaa; padding:5px 10px;'>
+                    Shameless advertisement: 可以下载
+                    <a href="http://agilityjs.com" style='color:blue;'>Agility.js</a>，
+                    一个用于替代backbone.js的简易框架。
+                </p>
 
-            <p>
-              <strong>Hello Backbone</strong> is a simple <a href="http://documentcloud.github.com/backbone">Backbone.js</a> tutorial comprised of self-explanatory "hello world" examples of increasing complexity. It was designed to provide a smoother transition from zero to the popular <a href="http://documentcloud.github.com/backbone/#examples-todos">Todos example</a>.
-            </p>
+                <p>
+                    <strong>Hello Backbone</strong> 是一个简单的 <a href="http://documentcloud.github.com/backbone">Backbone.js</a>
+                    教程。从简单的"Hello World"，开始，一步步提高到复杂的例子。
+                    这个教程是一个从零基础到完成
+                    <a href="http://documentcloud.github.com/backbone/#examples-todos">Todos 示例</a>
+                    的平滑过渡方案。
+                </p>
 
-            <p>
-              Backbone.js offers a lean <a href='http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller'>MVC framework</a> for organizing your Javascript application. It leads to more maintainable code by untangling the "spaghetti" of callbacks tied to different parts of the DOM and the backend server that often arises in rich client-side applications.
-            </p>
+                <p>
+                    Backbone.js offers a lean <a
+                        href='http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller'>MVC framework</a> for
+                    organizing your Javascript application. It leads to more maintainable code by untangling the
+                    "spaghetti" of callbacks tied to different parts of the DOM and the backend server that often arises
+                    in rich client-side applications.
+                </p>
 
-            <p>
-              The tutorial starts with a minimalist View object, and progressively introduces event binding/handling, Models, and Collections.
-            </p>
+                <p>
+                    The tutorial starts with a minimalist View object, and progressively introduces event
+                    binding/handling, Models, and Collections.
+                </p>
 
-            <p style='background:#ffffaa; padding:10px; text-align:center; font-size:120%; font-weight:bold;'>
-              <a href='docs/1.html' style='color:blue;'>Start the tutorial</a>
-            </p>
-            <p>
-              Once in the tutorial, use the navigation menu in the top-right corner to view other examples. Example numbers are in order of increasing complexity.
-            </p>
+                <p style='background:#ffffaa; padding:10px; text-align:center; font-size:120%; font-weight:bold;'>
+                    <a href='docs/1.html' style='color:blue;'>Start the tutorial</a>
+                </p>
 
-            <p>&nbsp;</p>
+                <p>
+                    Once in the tutorial, use the navigation menu in the top-right corner to view other examples.
+                    Example numbers are in order of increasing complexity.
+                </p>
 
-            <p>
-              Copyright &copy; Artur Adib [ <a href="http://arturadib.com">arturadib.com</a> ]
-            </p>
+                <p>&nbsp;</p>
 
-<!-- Twitter link -->
-<div style="float:left; margin-bottom:40px;"><img style="width:36px; margin:5px 10px 0 5px;" src="https://g.twimg.com/Twitter_logo_blue.png"/></div> <div style="background:rgb(245,245,255); padding:10px;">Follow me on Twitter: <a target="_blank" href="http://twitter.com/r2r">@r2r</a> </div>
+                <p>
+                    Copyright &copy; Artur Adib [ <a href="http://arturadib.com">arturadib.com</a> ]
+                </p>
 
-          </td>
-          <td class="code">
-            <p style='color:black;'>
-              The only non-Javascript part of the examples is the following HTML template:
-            </p>
+                <!-- Twitter link -->
+                <div style="float:left; margin-bottom:40px;"><img style="width:36px; margin:5px 10px 0 5px;"
+                                                                  src="https://g.twimg.com/Twitter_logo_blue.png"/>
+                </div>
+                <div style="background:rgb(245,245,255); padding:10px;">Follow me on Twitter: <a target="_blank"
+                                                                                                 href="http://twitter.com/r2r">@r2r</a>
+                </div>
+
+            </td>
+            <td class="code">
+                <p style='color:black;'>
+                    The only non-Javascript part of the examples is the following HTML template:
+                </p>
             <pre style='color:#777;'>
   &lt;!DOCTYPE html&gt;
   &lt;html&gt;
@@ -91,13 +112,15 @@
   &lt;/body&gt;
   &lt;/html&gt;
             </pre>
-          </td>
+            </td>
         </tr>
-      </tbody>
+        </tbody>
     </table>
-  </div>
+</div>
 
-<a href="https://github.com/arturadib/hello-backbonejs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/jintongyao/hello-backbonejs"><img style="position: absolute; top: 0; right: 0; border: 0;"
+                                                              src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+                                                              alt="Fork me on GitHub"></a>
 
 </body>
 </html>
