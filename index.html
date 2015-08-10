@@ -6,21 +6,6 @@
     </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="docs/docco.css">
-    <script>
-        if(window.location.href.search(/\?x/) < 0) {
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-65689365-2']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-        }
-    </script>
 </head>
 
 <body>
@@ -41,29 +26,27 @@
         <tr id="section-1">
             <td class="docs">
                 <p style='background:#aaffaa; padding:5px 10px;'>
-                    Shameless advertisement: 可以下载
+                    广告：欢迎下载
                     <a href="http://agilityjs.com" style='color:blue;'>Agility.js</a>，
-                    一个用于替代backbone.js的简易框架。
+                    一个可用于替代backbone.js的简易框架。（原文作者编写的一个Javascript框架。）
                 </p>
 
                 <p>
                     <strong>Hello Backbone</strong> 是一个简单的 <a href="http://documentcloud.github.com/backbone">Backbone.js</a>
-                    教程。从简单的"Hello World"，开始，一步步提高到复杂的例子。
-                    这个教程是一个从零基础到完成
-                    <a href="http://documentcloud.github.com/backbone/#examples-todos">Todos 示例</a>
-                    的平滑过渡方案。
+                    教程。从简单的"Hello World"开始，慢慢深入讲解一些更为复杂的示例。
+                    这个教程可以让你从零基础平滑过渡到开始编写一个
+                    <a href="http://documentcloud.github.com/backbone/#examples-todos">Todos应用</a>。
                 </p>
 
                 <p>
-                    Backbone.js offers a lean <a
-                        href='http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller'>MVC framework</a> for
-                    organizing your Javascript application. It leads to more maintainable code by untangling the
-                    "spaghetti" of callbacks tied to different parts of the DOM and the backend server that often arises
-                    in rich client-side applications.
+                    Backbone.js是一个简约的
+                    <a href='http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller'>MVC框架</a>
+                    ，可以用于帮助构建你的Javascript应用。
+                    他的目的是带来更容易维护的代码，将富客户端应用中经常出现的那些像面条混杂在一起的各种操作DOM的回调与后端服务解耦。
                 </p>
 
                 <p>
-                    本教程从一个最小的View对象开始，按顺序介绍了事件绑定/处理，Models以及Collections。
+                    本教程从最简单的的<b>View对象</b>开始，按顺序介绍了<b>事件绑定/处理</b>，<b>Models</b>以及<b>Collections</b>。
                 </p>
 
                 <p style='background:#ffffaa; padding:10px; text-align:center; font-size:120%; font-weight:bold;'>
@@ -71,8 +54,8 @@
                 </p>
 
                 <p>
-                    Once in the tutorial, use the navigation menu in the top-right corner to view other examples.
-                    Example numbers are in order of increasing complexity.
+                    本教程中，可以使用右上角的导航菜单来查看其他例子。
+                    示例代码依据数字顺序，复杂程度依次递进。
                 </p>
 
                 <p>&nbsp;</p>
@@ -80,11 +63,14 @@
                 <p>
                     Copyright &copy; Artur Adib [ <a href="http://arturadib.com">arturadib.com</a> ]
                 </p>
+                <p>
+                    翻译 &copy; 金同尧 [ <a href="http://jintongyao.github.io">jintongyao.com</a> ]
+                </p>
 
             </td>
             <td class="code">
                 <p style='color:black;'>
-                    The only non-Javascript part of the examples is the following HTML template:
+                    在示例中，唯一不是Javascript代码的部分为下面的HTML模板：
                 </p>
             <pre style='color:#777;'>
   &lt;!DOCTYPE html&gt;
@@ -109,9 +95,10 @@
     </table>
 </div>
 
-<a href="https://github.com/jintongyao/hello-backbonejs"><img style="position: absolute; top: 0; right: 0; border: 0;"
-                                                              src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
-                                                              alt="Fork me on GitHub"></a>
+    <a href="https://github.com/jintongyao/hello-backbonejs">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+        alt="Fork me on GitHub"></a>
 
 </body>
 </html>
